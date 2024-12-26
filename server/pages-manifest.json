@@ -1,15 +1,15 @@
 {
-  "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/_app": "pages/_app.js",
   "/api/background": "pages/api/background.js",
   "/api/expertise": "pages/api/expertise.js",
   "/api/portfolio": "pages/api/portfolio.js",
   "/api/recommendations": "pages/api/recommendations.js",
-  "/api/review": "pages/api/review.js",
   "/background": "pages/background.html",
   "/contact": "pages/contact.html",
   "/": "pages/index.html",
+  "/api/review": "pages/api/review.js",
   "/layout": "pages/layout.html",
   "/portfolio": "pages/portfolio.html",
   "/404": "pages/404.html"
