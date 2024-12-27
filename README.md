@@ -1,50 +1,58 @@
-<div align="center">
-  
-  <br />
-  <br />
-  
-  <img src="./public/readme-images/moj.png" />
+# Portfolio
 
-  <h2 align="center">Vilal Ali - Personal portfolio</h2>
+Self Coded Portfolio Website made using React JS and VASANTHI UI.
 
-This website is fully responsive personal portfolio, <br />Responsive for all devices, built using Nextjs, TailwindCSS only.
+## Features 📋
 
-<a href="https://vilal-ali.github.io/my-profile/"><strong>➥ Live Demo</strong></a>
+⚡️ Dark and Light Theme \
+🎨 Customizable Layouts: Personalize your portfolio layout.\
+📱 Responsive Design: Look great on desktop, tablet, and mobile.\
+💡 Edit with Ease: Light weight editing solution.\
+💻 Downloadable React Code: Full control over your portfolio.
 
-</div>
 
-<br />
+## Sections 📚
 
-### Demo Screeshots
+✔️ Home\
+✔️ About Me\
+✔️ Projects And Blogs\
+✔️ Resume\
+✔️ Contact Me
 
-![Vilal Portfolio Desktop Demo](./public/readme-images/portfolio.png "Desktop Demo")
 
-### Prerequisites
+## Getting Started ⚡ :-
 
-Before you begin, ensure you have met the following requirements:
-
-- [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-### Run Locally
-
-To run **portfolio** locally, run this command on your git bash:
-
-Linux and macOS:
+**1. Clone this repo by running the following command :-**
 
 ```bash
-sudo git clone 
+git clone https://github.com/vilalali/portfolio-vasanthi.git 
 ```
 
-Windows:
+**2. Now Install all the required packages by running the following commands :-**
 
 ```bash
-git clone https://github.com/vilalali/vilal-ali.git
+ npm install
 ```
 
-### Contact
+**3. Now start the React server by running the following command :-**
 
-If you want to contact with me you can reach me at [X](https://www.x.com/vilalali).
+```bash
+ npm start
+```
 
-### License
+**3.** **🎉 Open your browser and go to `https://localhost:3000`**
 
-This project is **free to use** and does not contains any license.
+## Deployment 📦
+
+This Web Application is deployed to Render.
+
+You could also host directly with Render by linking your own repository.
+
+
+## License 📄
+This project is licensed under the Apache-2.0 License - see the LICENSE.md file for details
+
+
+## Show your Support
+
+Give a ⭐️ if you like this project!
