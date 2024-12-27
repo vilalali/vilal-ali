@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vilalali/vilal-ali/static/css/main.3c8b8e37.css",
-    "main.js": "/vilalali/vilal-ali/static/js/main.551307f9.js",
+    "main.js": "/vilalali/vilal-ali/static/js/main.e2669764.js",
     "static/js/787.5f21fdb0.chunk.js": "/vilalali/vilal-ali/static/js/787.5f21fdb0.chunk.js",
     "static/media/dashboardgif.gif": "/vilalali/vilal-ali/static/media/dashboardgif.f372ef867ab6dc71a52b.gif",
     "static/media/dashboard.gif": "/vilalali/vilal-ali/static/media/dashboard.48011af8a598cfeec00f.gif",
@@ -30,11 +30,11 @@
     "static/media/css3.svg": "/vilalali/vilal-ali/static/media/css3.d51e893b4eecd56b38b570e498bd1712.svg",
     "index.html": "/vilalali/vilal-ali/index.html",
     "main.3c8b8e37.css.map": "/vilalali/vilal-ali/static/css/main.3c8b8e37.css.map",
-    "main.551307f9.js.map": "/vilalali/vilal-ali/static/js/main.551307f9.js.map",
+    "main.e2669764.js.map": "/vilalali/vilal-ali/static/js/main.e2669764.js.map",
     "787.5f21fdb0.chunk.js.map": "/vilalali/vilal-ali/static/js/787.5f21fdb0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3c8b8e37.css",
-    "static/js/main.551307f9.js"
+    "static/js/main.e2669764.js"
   ]
 }
