@@ -1,4 +1,38 @@
 import React from "react";
+const recommendationCard = [
+  {
+    id: 0,
+    name: 'Prof. Krishna Reddy P.',
+    image: "images/prof-krishna.png",
+    designation: 'Professor | IIIT Hyderabad',
+    view: "Hi everyone! I highly recommend Vilal for Data Science and Engineering opportunities. He worked for me on multiple projects, showcasing a deep understanding of React.js, React Native, Next.js, and Python. Vilal consistently delivered high-quality code, demonstrated a strong willingness to learn, and approached new challenges with enthusiasm and determination. He is a reliable and dedicated professional who would be a valuable asset to any Engineering team.. Highly recommended! 👍! 🌟",
+    linkednURL: "https://www.linkedin.com/in/shahmir-minhas/"
+  },
+  {
+    id: 1,
+    name: 'Dr. Rashid Ahmed',
+    image: "images/rashid.jpeg",
+    designation: 'Data Scientist | Machine Learning Engineer | Python Developer | NLP Expert',
+    view: "I had the privilege of working alongside Vilal on multiple NLP projects, and I must say, his talent and work ethic truly stood out. Recently, we were both part of the dynamic team at Data Science Technologies, where Vilal's professionalism and attention to detail shone brightly. I wholeheartedly endorse Vilal for any opportunity that calls for a highly skilled and dedicated individual.",
+    linkednURL: "https://faculty.iiit.ac.in/~pkreddy/"
+  },
+  {
+    id: 2,
+    name: 'Karthik Vaidhyanathan',
+    image: "images/prof-karthik.jpeg",
+    designation: 'Assistant Professor at IIIT Hyderabad (IIITH) | Researcher | Teacher | Consultant',
+    view: "I wholeheartedly recommend Vilal as a talented software engineer with an incredible flair for System Design. His proficiency in Node.js further enhances his capabilities, allowing him to build robust and scalable applications. Vilal Ali's attention to detail, problem-solving skills, and dedication to delivering exceptional results make him a valuable addition to any development team.",
+    linkednURL: "https://www.linkedin.com/in/karthikv1392/"
+  },
+  {
+    id: 3,
+    name: 'Amit Pandey',
+    image: "images/amit.jpeg",
+    designation: 'Data Science Researcher',
+    view: "I highly recommend Vilal Ali for web frontend development positions. Their expertise in ReactJS and Node.js, combined with their professionalism and dedication, make them an invaluable asset to any team.",
+    linkednURL: "https://www.linkedin.com/in/amitpandey2910/"
+  },
+];
 
 const Home = () => {
   return (
@@ -37,7 +71,7 @@ const Home = () => {
                           </li>
                           <li className="wow fadeIn" data-wow-delay=".2s">
                             <a
-                              href="https://vilalali.github.io/vilal-ali"
+                              href="https://github.com/vilalali"
                               target="newtab"
                             >
                               <i
@@ -46,9 +80,9 @@ const Home = () => {
                               ></i>
                             </a>
                           </li>
-                          <li className="wow fadeIn" data-wow-delay=".6s">
+                          {/* <li className="wow fadeIn" data-wow-delay=".6s">
                             <a
-                              href="#"
+                              href="https://www.instagram.com/vilalz/"
                               target="newtab"
                             >
                               <i
@@ -56,12 +90,9 @@ const Home = () => {
                                 aria-hidden="true"
                               ></i>
                             </a>
-                          </li>
+                          </li> */}
                           <li className="wow fadeIn" data-wow-delay=".8s">
-                            <a
-                              href="https://vilalali.github.io/vilal-ali"
-                              target="newtab"
-                            >
+                            <a href="https://x.com/b_belaal" target="newtab">
                               <i
                                 className="fa fa-twitter"
                                 aria-hidden="true"
@@ -70,10 +101,13 @@ const Home = () => {
                           </li>
                           <li className="wow fadeIn" data-wow-delay="1s">
                             <a
-                              href="https://vilalali.github.io/vilal-ali"
+                              href="https://www.facebook.com/vilalZ"
                               target="newtab"
                             >
-                              <i className="fa fa-book" aria-hidden="true"></i>
+                              <i
+                                className="fa fa-facebook"
+                                aria-hidden="true"
+                              ></i>
                             </a>
                           </li>
                         </ul>
@@ -101,15 +135,25 @@ const Home = () => {
                       <div className="underline1"></div>
                       <div className="underline2"></div>
                       <p>
-                        At present time I'm working on a multi-role, as a Web
-                        Developer I design and create various websites. And as
-                        UI/UX Designer I create many designs for Web
-                        Applications and Mobile applications. I create the
-                        beauty of the site. I'm responsible for the site's
-                        technical aspects, such as its performance and capacity,
-                        which are measures of a website's speed and how much
-                        traffic the site can handle. In addition, I also create
-                        content for the site.
+                        As a Full Stack Software Engineer with 6+ years of
+                        experience, I specialize in architecting, developing,
+                        and deploying robust, scalable system. I have a strong
+                        foundation in React.js, Node.js, Express.js, MySQL,
+                        NoSQL, Python, Flask and AWS S3. I thrive on solving
+                        complex technical challenges, optimizing system
+                        performance, and mentoring team members to deliver
+                        innovative solutions. I have a proven track record of
+                        leading teams and successfully delivering high-quality
+                        projects.As a Full Stack Software Engineer with 6+ years
+                        of experience, I specialize in architecting, developing,
+                        and deploying robust, scalable system. I have a strong
+                        foundation in React.js, Node.js, Express.js, MySQL,
+                        NoSQL, Python, Flask and AWS S3. I thrive on solving
+                        complex technical challenges, optimizing system
+                        performance, and mentoring team members to deliver
+                        innovative solutions. I have a proven track record of
+                        leading teams and successfully delivering high-quality
+                        projects.
                       </p>
                     </div>
                   </div>
@@ -121,43 +165,54 @@ const Home = () => {
                         className="fa fa-pencil-square-o love-icon"
                         aria-hidden="true"
                       ></i>
-                      <h3>Working Hard</h3>
+                      <h3>Striving for Excellence</h3>
                       <div className="underline1"></div>
                       <div className="underline2"></div>
-                      <p>Always believe in hard-work in my profession</p>
+                      <p>
+                        Always believe in dedication and passion in my
+                        profession
+                      </p>
                     </div>
                   </div>
                   <div className="col-md-3 col-sm-6">
                     <div className="love-details" data-wow-delay=".3s">
                       <i
-                        className="fa fa-file-image-o love-icon"
+                        className="fa fa-lightbulb-o love-icon"
                         aria-hidden="true"
                       ></i>
-                      <h3>UI/UX Design</h3>
+                      <h3>Problem Solver</h3>
                       <div className="underline1"></div>
                       <div className="underline2"></div>
-                      <p>Love to do UI/UX design for new product</p>
+                      <p>Innovative and creative problem-solving.</p>
                     </div>
                   </div>
                   <div className="col-md-3 col-sm-6">
                     <div className="love-details" data-wow-delay=".2s">
                       <i
-                        className="fa fa-globe love-icon"
+                        className="fa fa-code love-icon"
                         aria-hidden="true"
                       ></i>
-                      <h3>Web Design</h3>
+                      <h3>Full Stack</h3>
                       <div className="underline1"></div>
                       <div className="underline2"></div>
-                      <p>Passionate about Web Design from start</p>
+                      <p>
+                        Building dynamic and scalable applications end-to-end.
+                      </p>
                     </div>
                   </div>
                   <div className="col-md-3 col-sm-6">
                     <div className="love-details" data-wow-delay=".4s">
-                      <i className="fa fa-cog love-icon" aria-hidden="true"></i>
-                      <h3>Web Development</h3>
+                      <i
+                        className="fa fa-cloud love-icon"
+                        aria-hidden="true"
+                      ></i>
+                      <h3>System Architecture</h3>
                       <div className="underline1"></div>
                       <div className="underline2"></div>
-                      <p>Created all types of modern web development.</p>
+                      <p>
+                        Expertise in designing robust systems with
+                        microservices.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -185,22 +240,29 @@ const Home = () => {
                         <div className="underline2 no-margin"></div>
                       </div>
                       <p className="wow fadeIn">
-                        I am a software developer based in Hyderabad, India,
-                        currently working at Mplify Tech with over 6.5 years of
-                        experience. I specialize in backend development,
-                        crafting everything from small business websites to
-                        complex, interactive web applications. Whether you're a
-                        business seeking a robust web presence or an employer
-                        looking to hire, you can connect with me.
-                        <a className="underline2" href="#contact">
+                        I am a versatile professional based in Hyderabad, India,
+                        with over 6 years of experience in IT, including 2 years
+                        as a tech lead. I specialize in designing and
+                        implementing scalable solutions across diverse domains
+                        such as AI, ML, MLOps, DevOps, and full-stack
+                        development. Whether you're a business in need of
+                        innovative solutions or an employer seeking a
+                        well-rounded expert, feel free to connect with me
+                        <a
+                          className="underline2"
+                          href="https://www.linkedin.com/in/vilal-ali/"
+                        >
                           here.
                         </a>
                         <br />
-                        <br />I take pride in designing and building digital
-                        products with clean, elegant code. My expertise includes
-                        custom web theme development, and I'm passionate about
-                        delivering exceptional user experiences.
+                        <br />I take pride in creating impactful digital
+                        experiences with clean, efficient, and scalable code. My
+                        expertise spans from backend system development to
+                        user-friendly interfaces, and I am driven by the passion
+                        for delivering exceptional outcomes tailored to client
+                        needs.
                       </p>
+
                       <a
                         className="about-link-1"
                         href="assets/cv/VILAL_ALI_CV_SDE_II_2024_V4.pdf"
@@ -208,7 +270,10 @@ const Home = () => {
                       >
                         See Resume
                       </a>
-                      <a className="about-link-2" href="#contact">
+                      <a
+                        className="about-link-2"
+                        href="https://www.linkedin.com/in/vilal-ali/"
+                      >
                         Hire Me
                       </a>
                     </div>
@@ -223,49 +288,49 @@ const Home = () => {
                     <div className="col-md-3 col-sm-6">
                       <div className="work-statistics">
                         <i
-                          className="fa fa-pencil-square-o stat-icon"
+                          className="fa fa-code stat-icon"
                           aria-hidden="true"
                         ></i>
-                        <h3 className="Count">32+</h3>
+                        <h3 className="Count">50+</h3>
                         <div className="underline1"></div>
                         <div className="underline2"></div>
-                        <p>Project Completed</p>
+                        <p>Projects Delivered</p>
                       </div>
                     </div>
                     <div className="col-md-3 col-sm-6">
                       <div className="work-statistics">
                         <i
-                          className="fa fa-crop stat-icon"
+                          className="fa fa-object-group stat-icon"
                           aria-hidden="true"
                         ></i>
-                        <h3 className="Count">25+</h3>
+                        <h3 className="Count">35+</h3>
                         <div className="underline1"></div>
                         <div className="underline2"></div>
-                        <p>UI/UX Design Done</p>
+                        <p>UI/UX Designs Completed</p>
                       </div>
                     </div>
                     <div className="col-md-3 col-sm-6">
                       <div className="work-statistics">
                         <i
-                          className="fa fa-bolt stat-icon"
+                          className="fa fa-globe stat-icon"
                           aria-hidden="true"
                         ></i>
-                        <h3 className="Count">15+</h3>
+                        <h3 className="Count">20+</h3>
                         <div className="underline1"></div>
                         <div className="underline2"></div>
-                        <p>Website Created</p>
+                        <p>Web Applications Built</p>
                       </div>
                     </div>
                     <div className="col-md-3 col-sm-6">
                       <div className="work-statistics">
                         <i
-                          className="fa fa-coffee stat-icon"
+                          className="fa fa-briefcase stat-icon"
                           aria-hidden="true"
                         ></i>
-                        <h3 className="Count">100+</h3>
+                        <h3 className="Count">12+</h3>
                         <div className="underline1"></div>
                         <div className="underline2"></div>
-                        <p>Cups Coffee Taken</p>
+                        <p>Years of Experience</p>
                       </div>
                     </div>
                   </div>
@@ -297,15 +362,14 @@ const Home = () => {
                 <div className="col-md-6">
                   <div className="skill-details text-left">
                     <p>
-                      I specialize in backend development, with a strong focus
-                      on architecting robust and efficient server-side
-                      applications and APIs. My expertise includes designing and
-                      implementing scalable solutions that effectively manage
-                      complex business logic, data operations, and integration
-                      requirements. I am passionate about leveraging
-                      cutting-edge technologies to deliver high-performance and
-                      reliable backend systems that meet the evolving needs of
-                      modern applications.
+                      I specialize in backend development with expertise in
+                      building scalable, secure, and efficient server-side
+                      applications and APIs. My strengths include implementing
+                      microservices architectures, gRPC-based communication, and
+                      robust data processing pipelines. With a passion for
+                      innovation, I design solutions that address real-world
+                      challenges, delivering impactful and reliable systems
+                      tailored to modern application demands.
                     </p>
                   </div>
                 </div>
@@ -315,21 +379,292 @@ const Home = () => {
                       <div className="col">
                         <ul id="skill-main">
                           <li>
-                            <h3>Java / Php - 92%</h3>
+                            <h3>
+                              Frontend Technologies (React JS, React Native,
+                              JavaScript, HTML, CSS, ) - 95%
+                            </h3>
                           </li>
                           <li>
-                            <h3>HTML / CSS / JavaScript - 90%</h3>
+                            <h3>
+                              Backend Development (Node.js, Laravel, gRPC) - 92%
+                            </h3>
                           </li>
                           <li>
-                            <h3>React JS - 60%</h3>
+                            <h3>
+                              Python Full Stack (Django, Flak, Panda, Numpy) -
+                              90%
+                            </h3>
                           </li>
                           <li>
-                            <h3>UI / UX - 70%</h3>
+                            <h3>
+                              Database Management (SQL, NoSQL, MongoDB,
+                              PostgreSQL) - 90%
+                            </h3>
                           </li>
                           <li>
-                            <h3>GIT / Github / Docker - 85%</h3>
+                            <h3>
+                              DevOps & CI/CD (Git, Docker, Kubernetes) - 88%
+                            </h3>
+                          </li>
+                          <li>
+                            <h3>UI / UX Design - 80%</h3>
+                          </li>
+                          <li>
+                            <h3>
+                              Microservices Architecture & API Development - 85%
+                            </h3>
+                          </li>
+                          <li>
+                            <h3>
+                              Cloud Platforms (AWS, Azure, Google Cloud) - 80%
+                            </h3>
                           </li>
                         </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ================================ Professional Experience =============================== */}
+        <div id="work">
+          <div className="work-content">
+            <div className="work-grid text-center">
+              <div className="container">
+                <div className="row">
+                  <div className="col-md-12">
+                    <div className="main-title text-center wow fadeIn">
+                      <h3>Professional Experience</h3>
+                      <div className="underline1"></div>
+                      <div className="underline2"></div>
+                      <p>
+                        I like to code things from scratch, and enjoy bringing
+                        ideas to life in the browser.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="row mr-2">
+                  {" "}
+                  {/* Added mr-5 for right margin */}
+                  <div className="col-md-12 col-sm-12">
+                    <div className="resume-details" data-wow-delay=".2s">
+                      <div className="resume-hover"></div>
+                      <div className="row love-row wow fadeIn">
+                        {/* First column with col-md-1 for the icon */}
+                        <div className="col-md-1 col-sm-1">
+                          <div className="resume-main">
+                            <i
+                              className="fa fa-briefcase resume-icon"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                        </div>
+
+                        {/* Second column with col-md-11 for the content */}
+                        <div className="col-md-11 col-sm-11 text-left">
+                          <h3>Sr. Software Engineer (Full Stack)</h3>
+                          <h2>
+                            IHub Data, IIIT-H | Feb 2023 – Ongoing | Hyderabad,
+                            IN
+                          </h2>
+
+                          <ul>
+                            <p>
+                              <li>
+                                <strong>System Design and Architecture:</strong>{" "}
+                                Designed scalable, high-level systems and
+                                microservice architectures for the Data
+                                Foundation platform, ensuring robustness and
+                                modularity.
+                              </li>
+                            </p>
+
+                            <p>
+                              <li>
+                                <strong>Coding and Development:</strong>{" "}
+                                Delivered clean, scalable, and efficient code to
+                                support large-scale systems and improve
+                                performance. Performed full-stack development,
+                                integrating tools and frameworks to enhance
+                                functionality and maintainability.
+                              </li>
+                            </p>
+
+                            <p>
+                              <li>
+                                <strong>Code Review and Training:</strong> Led
+                                code reviews to enhance code readability,
+                                scalability, and reusability, while mentoring
+                                the team.
+                              </li>
+                            </p>
+
+                            <p>
+                              <li>
+                                <strong>Tool and Framework Integration:</strong>{" "}
+                                Integrated advanced tools and frameworks into
+                                existing platforms to enhance functionality and
+                                scalability.
+                              </li>
+                            </p>
+
+                            <p>
+                              <li>
+                                <strong>
+                                  Team Leadership and Agile Practices:
+                                </strong>{" "}
+                                Managed cross-functional teams using Agile
+                                methodologies and Jira Atlassian tools,
+                                streamlining workflows and resolving bottlenecks
+                                to enhance team efficiency by 30%. Provided
+                                SME-level guidance on hosting issues, logins,
+                                and server upgrades.
+                              </li>
+                            </p>
+
+                            <p>
+                              <li>
+                                <strong>Documentation:</strong> Authored
+                                detailed technical documentation for proprietary
+                                software, reducing orientation time for new
+                                hires by 50%.
+                              </li>
+                            </p>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="row mr-2">
+                  {/* Added mr-5 for right margin */}
+                  <div className="col-md-12 col-sm-12">
+                    <div className="resume-details" data-wow-delay=".2s">
+                      <div className="resume-hover"></div>
+                      <div className="row love-row wow fadeIn">
+                        {/* First column with col-md-1 for the icon */}
+                        <div className="col-md-1 col-sm-1">
+                          <div className="resume-main">
+                            <i
+                              className="fa fa-briefcase resume-icon"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                        </div>
+
+                        {/* Second column with col-md-11 for the content */}
+                        <div className="col-md-11 col-sm-11 text-left">
+                          <h3>Sr. Software Engineer & UI/UX</h3>
+                          <h2>
+                            eBhasha Setu, CIE, IIITH | April 2019 – Feb 2023 |
+                            Hyderabad, IN
+                          </h2>
+
+                          <ul>
+                            <p>
+                              <li>
+                                <strong>System Design and Development:</strong>{" "}
+                                Worked on developing, deploying, and maintaining
+                                various tools, including increasing the accuracy
+                                of an HMM-based transliteration system for
+                                Urdu-Hindi machine transliteration, now used by
+                                Rekhta.
+                              </li>
+                            </p>
+
+                            <p>
+                              <li>
+                                <strong>SWAYAM Project (MHRD):</strong> Designed
+                                and developed Videozaar, a video transcript
+                                generation and editing platform with subtitle
+                                synchronization support for multiple Indian
+                                regional languages.
+                              </li>
+                            </p>
+
+                            <p>
+                              <li>
+                                <strong>Leadership and Teamwork:</strong> Led a
+                                team of 4+ in developing the Avatar OCR
+                                Translation System for the Bhashini Challenge,
+                                aimed at digitizing and translating government
+                                documents in regional languages. Utilized tools
+                                like indicOCR and SWAYAM MT and won 1st prize.
+                              </li>
+                            </p>
+
+                            <p>
+                              <li>
+                                <strong>Technologies Used:</strong> Python,
+                                SciPy, NumPy, Pandas, Django, Flask, JavaScript,
+                                MySQL, MongoDB.
+                              </li>
+                            </p>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="row mr-2">
+                  {/* Added mr-5 for right margin */}
+                  <div className="col-md-12 col-sm-12">
+                    <div className="resume-details" data-wow-delay=".2s">
+                      <div className="resume-hover"></div>
+                      <div className="row love-row wow fadeIn">
+                        {/* First column with col-md-1 for the icon */}
+                        <div className="col-md-1 col-sm-1">
+                          <div className="resume-main">
+                            <i
+                              className="fa fa-briefcase resume-icon"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                        </div>
+
+                        {/* Second column with col-md-11 for the content */}
+                        <div className="col-md-11 col-sm-11 text-left">
+                          <h3>Research Intern</h3>
+                          <h2>
+                            CVEST Research Center, IIITH | Sept 2018 – April
+                            2019 | Hyderabad, IN
+                          </h2>
+
+                          <ul>
+                            <p>
+                              <li>
+                                <strong>
+                                  Desktop Application Development:
+                                </strong>{" "}
+                                Created a desktop application using Electron JS,
+                                HTML, and CSS.
+                              </li>
+                            </p>
+
+                            <p>
+                              <li>
+                                <strong>Full-Stack Development:</strong>{" "}
+                                Developed a Flask-based full-stack website for
+                                CVEST, handling both back-end and front-end
+                                development.
+                              </li>
+                            </p>
+
+                            <p>
+                              <li>
+                                <strong>Installation for Linux OS:</strong>{" "}
+                                Designed back-end and front-end structures for a
+                                desktop application to be installable on
+                                Debian-based Linux OS.
+                              </li>
+                            </p>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -364,47 +699,21 @@ const Home = () => {
                       <div className="resume-hover"></div>
                       <div className="resume-main">
                         <i
-                          className="fa fa-home resume-icon"
-                          aria-hidden="true"
-                        ></i>
-                        <h3>School</h3>
-                        <h2>2010-2017</h2>
-                        <div className="underline1"></div>
-                        <div className="underline2"></div>
-                        <p>
-                          I completed my secondary education at Haludbari High
-                          School (H.S.) in Khejuri, West Bengal, India.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4 col-sm-4">
-                    <div className="resume-details" data-wow-delay=".3s">
-                      <div className="resume-hover"></div>
-                      <div className="resume-main">
-                        <i
                           className="fa fa-graduation-cap resume-icon"
                           aria-hidden="true"
                         ></i>
-                        <h3>Graduation</h3>
-                        <h2>2017-2020</h2>
+                        <h3>MS By Research in CSE</h3>
+                        <h2>July 2024 – Pursuing</h2>
                         <div className="underline1"></div>
                         <div className="underline2"></div>
                         <p>
-                          Achieved Graduation from{" "}
-                          <a
-                            href="https://github.com/vilalali"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            CCLMS (Contai College of Learning and Management
-                            Science)
-                          </a>
-                          , Contai, West Bengal, India.
+                          I am currently pursuing MS By Research in Computer
+                          Science and Engineering at IIIT Hyderabad.
                         </p>
                       </div>
                     </div>
                   </div>
+
                   <div className="col-md-4 col-sm-4">
                     <div className="resume-details" data-wow-delay=".4s">
                       <div className="resume-hover"></div>
@@ -413,115 +722,32 @@ const Home = () => {
                           className="fa fa-graduation-cap resume-icon"
                           aria-hidden="true"
                         ></i>
-                        <h3>Training &amp; Skill</h3>
-                        <h2>2022-2022</h2>
+                        <h3>Master of Computer Applications (MCA)</h3>
+                        <h2>Aug 2012 – May 2015</h2>
                         <div className="underline1"></div>
                         <div className="underline2"></div>
                         <p>
-                          I have successfully completed my Full-Stack Web
-                          Development training at{" "}
-                          <a
-                            href="https://github.com/vilalali"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            Masai School
-                          </a>
-                          , Bengaluru, India.
+                          I completed my MCA at the Institute of Engineering &
+                          Technology.
                         </p>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="row main-row wow fadeIn">
-                  <div className="col-md-12">
-                    <div className="main-title text-center">
-                      <h3>Working Experience</h3>
-                      <div className="underline1"></div>
-                      <div className="underline2"></div>
-                      <p>
-                        My career is a canvas of innovation and growth, where
-                        each experience paints a new stroke of achievement and
-                        learning.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="row love-row">
-                  <div className="col-md-4 col-sm-12">
-                    <div className="exp-details" data-wow-delay=".2s">
-                      <div className="exp-hover"></div>
-                      <div className="exp-main">
+                  <div className="col-md-4 col-sm-4">
+                    <div className="resume-details" data-wow-delay=".5s">
+                      <div className="resume-hover"></div>
+                      <div className="resume-main">
                         <i
-                          className="fa fa-building exp-icon"
+                          className="fa fa-graduation-cap resume-icon"
                           aria-hidden="true"
                         ></i>
-                        <h3>
-                          <a
-                            href="https://github.com/vilalali"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ color: "#4d4d4d" }}
-                          >
-                            Patel G Tech LLP
-                          </a>
-                        </h3>
-                        <h4>Repub Member</h4>
-                        <h2>2019-2020</h2>
+                        <h3>B.Sc. in Computer Science</h3>
+                        <h2>July 2007 – May 2010</h2>
                         <div className="underline1"></div>
                         <div className="underline2"></div>
                         <p>
-                          During my internship at PATEL G TECH LLP, I
-                          contributed as a member of the Republication Team.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4 col-sm-12">
-                    <div className="exp-details" data-wow-delay=".3s">
-                      <div className="exp-hover"></div>
-                      <div className="exp-main">
-                        <i
-                          className="fa fa-building exp-icon"
-                          aria-hidden="true"
-                        ></i>
-                        <h3>
-                          <a
-                            href="https://github.com/vilalali"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ color: "#4d4d4d" }}
-                          >
-                            Uaguria Software
-                          </a>
-                        </h3>
-                        <h4>Web Developer</h4>
-                        <h2>2020-2022</h2>
-                        <div className="underline1"></div>
-                        <div className="underline2"></div>
-                        <p>
-                          At Uaguria Software, I served as a web developer and
-                          IT consultant, contributing with versatility.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4 col-sm-12">
-                    <div className="exp-details" data-wow-delay=".4s">
-                      <div className="exp-hover"></div>
-                      <div className="exp-main">
-                        <i
-                          className="fa fa-building exp-icon"
-                          aria-hidden="true"
-                        ></i>
-                        <h3>Mplify Tech</h3>
-                        <h4>Software Developer</h4>
-                        <h2>2023-Present</h2>
-                        <div className="underline1"></div>
-                        <div className="underline2"></div>
-                        <p>
-                          At Mplify Tech, I serve as a Software Developer,
-                          innovating and enhancing software solutions.
+                          I completed my B.Sc. in Computer Science at Lucknow
+                          University.
                         </p>
                       </div>
                     </div>
@@ -673,258 +899,250 @@ const Home = () => {
 
         <div id="service">
           <div className="service-content">
-            <div className="service-grid text-center">
-              <div className="container">
-                <div className="row">
-                  <div className="col-md-12">
-                    <div className="main-title text-center wow fadeIn">
-                      <h3>Service List</h3>
-                      <div className="underline1"></div>
-                      <div className="underline2"></div>
-                      <p>
-                        I always want to make things that make a difference.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="row love-row wow fadeIn">
-                  <div className="col-md-4 col-sm-6">
-                    <div className="service-details" data-wow-delay=".1s">
-                      <div className="service-head">
-                        <img
-                          src="assets/img/service/design-development.jpg"
-                          alt="design-development"
-                        />
-                      </div>
-                      <div className="service-bottom">
-                        <i
-                          className="fa fa-edit service-icon"
-                          aria-hidden="true"
-                        ></i>
-                        <h3>Design + Development</h3>
-                        <div className="underline1"></div>
-                        <div className="underline2"></div>
-                        <p>
-                          Clean, modern designs - optimized for performance,
-                          search engines, and converting users to customers.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4 col-sm-6">
-                    <div className="service-details" data-wow-delay=".1s">
-                      <div className="service-head">
-                        <img
-                          src="assets/img/service/e-commarce.jpg"
-                          alt="e-commarce"
-                        />
-                      </div>
-                      <div className="service-bottom">
-                        <i
-                          className="fa fa-cart-plus exp-icon"
-                          aria-hidden="true"
-                        ></i>
-                        <h3>eCommerce</h3>
-                        <div className="underline1"></div>
-                        <div className="underline2"></div>
-                        <p>
-                          Integration of eCommerce platforms, payment gateways,
-                          custom product templates, and more.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4 col-sm-6">
-                    <div className="service-details" data-wow-delay=".1s">
-                      <div className="service-head">
-                        <img
-                          src="assets/img/service/analytics.jpg"
-                          alt="analytics"
-                        />
-                      </div>
-                      <div className="service-bottom">
-                        <i
-                          className="fa fa-tachometer service-icon"
-                          aria-hidden="true"
-                        ></i>
-                        <h3>Analytics</h3>
-                        <div className="underline1"></div>
-                        <div className="underline2"></div>
-                        <p>
-                          Get insights into who is browsing your site so that
-                          you can make smarter business decisions.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4 col-sm-6">
-                    <div className="service-details" data-wow-delay=".1s">
-                      <div className="service-head">
-                        <img
-                          src="assets/img/service/mobile-friendly.jpg"
-                          alt="mobile-friendly"
-                        />
-                      </div>
-                      <div className="service-bottom">
-                        <i
-                          className="fa fa-desktop exp-icon"
-                          aria-hidden="true"
-                        ></i>
-                        <h3>Mobile-friendly</h3>
-                        <div className="underline1"></div>
-                        <div className="underline2"></div>
-                        <p>
-                          A responsive design makes your website accessible to
-                          all users, regardless of their device.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4 col-sm-6">
-                    <div className="service-details" data-wow-delay=".1s">
-                      <div className="service-head">
-                        <img
-                          src="assets/img/service/website-audit.jpg"
-                          alt="website-audit"
-                        />
-                      </div>
-                      <div className="service-bottom">
-                        <i
-                          className="fa fa-search exp-icon"
-                          aria-hidden="true"
-                        ></i>
-                        <h3>Website Rank</h3>
-                        <div className="underline1"></div>
-                        <div className="underline2"></div>
-                        <p>
-                          Looking to improve your page performance, SEO, or user
-                          experience? Request a free site audit.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4 col-sm-6">
-                    <div className="service-details" data-wow-delay=".1s">
-                      <div className="service-head">
-                        <img
-                          src="assets/img/service/content-management.jpg"
-                          alt="content-management"
-                        />
-                      </div>
-                      <div className="service-bottom">
-                        <i
-                          className="fa fa-file exp-icon"
-                          aria-hidden="true"
-                        ></i>
-                        <h3>Content Management</h3>
-                        <div className="underline1"></div>
-                        <div className="underline2"></div>
-                        <p>
-                          Custom theme and plugin development. Easily update
-                          site content with knowledge of powerful code.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="testimonial">
-              <div className="testimonial-content">
-                <div className="testimonial-grid">
+            <div id="service">
+              <div className="service-content">
+                <div className="service-grid text-center">
                   <div className="container">
                     <div className="row">
                       <div className="col-md-12">
                         <div className="main-title text-center wow fadeIn">
-                          <h3>Testimonials</h3>
+                          <h3>Service List</h3>
                           <div className="underline1"></div>
                           <div className="underline2"></div>
                           <p>
-                            People I've worked with have said some nice things
+                            Passionate about creating innovative solutions that
+                            drive business growth, enhance performance, and
+                            ensure scalability.
                           </p>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="testimonial-details">
-                    <section id="carousel">
-                      <div className="container">
-                        <div className="row">
-                          <div className="col-md-8 col-md-offset-2">
-                            <div className="quote">
-                              <i className="fa fa-quote-left fa-4x"></i>
-                            </div>
-                            <div
-                              className="carousel slide"
-                              id="fade-quote-carousel"
-                              data-ride="carousel"
-                              data-interval="3000"
-                            >
-                              <ol className="carousel-indicators">
-                                <li
-                                  data-target="#fade-quote-carousel"
-                                  data-slide-to="0"
-                                  className="active"
-                                ></li>
-                                <li
-                                  data-target="#fade-quote-carousel"
-                                  data-slide-to="1"
-                                ></li>
-                                <li
-                                  data-target="#fade-quote-carousel"
-                                  data-slide-to="2"
-                                ></li>
-                              </ol>
-                              <div className="carousel-inner">
-                                <div className="active item">
-                                  <blockquote>
-                                    <p>
-                                      Vilal was a real pleasure to work with
-                                      and we look forward to working with him
-                                      again. He's definitely the kind of
-                                      developer you can trust with a project
-                                      from start to finish.”
-                                      <br />
-                                      <span>Prof. K Reddy P</span>
-                                    </p>
-                                  </blockquote>
-                                </div>
-                                <div className="item">
-                                  <blockquote>
-                                    <p>
-                                      Vilal's a clear communicator with the
-                                      tenacity and confidence to really dig in
-                                      to tricky design scenarios and the
-                                      collaborative friction that's needed to
-                                      produce excellent work.”
-                                      <br />
-                                      <span>Kamrul Roy</span>
-                                    </p>
-                                  </blockquote>
-                                </div>
-                                <div className="item">
-                                  <blockquote>
-                                    <p>
-                                      Vilal has done a fantastic job overall.
-                                      Not only the site is to design, but the
-                                      code is also very clean and slick. Love
-                                      the way he achieved the translations
-                                      portion of the site.”
-                                      <br />
-                                      <span>Shahadat Mahapatra</span>
-                                    </p>
-                                  </blockquote>
-                                </div>
-                              </div>
-                            </div>
+                    <div className="row love-row wow fadeIn">
+                      <div className="col-md-4 col-sm-6">
+                        <div className="service-details" data-wow-delay=".1s">
+                          <div className="service-head">
+                            <img
+                              src="assets/img/service/design-development.jpg"
+                              alt="design-development"
+                            />
+                          </div>
+                          <div className="service-bottom">
+                            <i
+                              className="fa fa-edit service-icon"
+                              aria-hidden="true"
+                            ></i>
+                            <h3>System Design & Architecture</h3>
+                            <div className="underline1"></div>
+                            <div className="underline2"></div>
+                            <p>
+                              Designing scalable and efficient architectures for
+                              cloud-native applications, ensuring high
+                              performance and reliability.
+                            </p>
                           </div>
                         </div>
                       </div>
-                    </section>
+                      <div className="col-md-4 col-sm-6">
+                        <div className="service-details" data-wow-delay=".1s">
+                          <div className="service-head">
+                            <img
+                              src="assets/img/service/e-commarce.jpg"
+                              alt="e-commarce"
+                            />
+                          </div>
+                          <div className="service-bottom">
+                            <i
+                              className="fa fa-cart-plus exp-icon"
+                              aria-hidden="true"
+                            ></i>
+                            <h3>Full-Stack Development</h3>
+                            <div className="underline1"></div>
+                            <div className="underline2"></div>
+                            <p>
+                              Developing full-stack solutions using modern
+                              technologies like React.js and Node.js to create
+                              seamless user experiences and powerful backend
+                              systems.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-4 col-sm-6">
+                        <div className="service-details" data-wow-delay=".1s">
+                          <div className="service-head">
+                            <img
+                              src="assets/img/service/analytics.jpg"
+                              alt="analytics"
+                            />
+                          </div>
+                          <div className="service-bottom">
+                            <i
+                              className="fa fa-tachometer service-icon"
+                              aria-hidden="true"
+                            ></i>
+                            <h3>Cloud & DevOps Solutions</h3>
+                            <div className="underline1"></div>
+                            <div className="underline2"></div>
+                            <p>
+                              Expertise in cloud infrastructure management and
+                              DevOps practices to ensure smooth, automated
+                              deployments and scaling across platforms like AWS
+                              and GCP.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-4 col-sm-6">
+                        <div className="service-details" data-wow-delay=".1s">
+                          <div className="service-head">
+                            <img
+                              src="assets/img/service/mobile-friendly.jpg"
+                              alt="mobile-friendly"
+                            />
+                          </div>
+                          <div className="service-bottom">
+                            <i
+                              className="fa fa-desktop exp-icon"
+                              aria-hidden="true"
+                            ></i>
+                            <h3>Machine Learning & AI</h3>
+                            <div className="underline1"></div>
+                            <div className="underline2"></div>
+                            <p>
+                              Applying machine learning and AI techniques to
+                              enhance business decisions, automate tasks, and
+                              provide deeper insights into operations.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-4 col-sm-6">
+                        <div className="service-details" data-wow-delay=".1s">
+                          <div className="service-head">
+                            <img
+                              src="assets/img/service/website-audit.jpg"
+                              alt="website-audit"
+                            />
+                          </div>
+                          <div className="service-bottom">
+                            <i
+                              className="fa fa-search exp-icon"
+                              aria-hidden="true"
+                            ></i>
+                            <h3>Agile Methodology & Team Leadership</h3>
+                            <div className="underline1"></div>
+                            <div className="underline2"></div>
+                            <p>
+                              Leading teams with Agile methodologies to drive
+                              high-impact projects, focusing on collaboration
+                              and iterative development for continuous
+                              improvement.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-4 col-sm-6">
+                        <div className="service-details" data-wow-delay=".1s">
+                          <div className="service-head">
+                            <img
+                              src="assets/img/service/content-management.jpg"
+                              alt="content-management"
+                            />
+                          </div>
+                          <div className="service-bottom">
+                            <i
+                              className="fa fa-file exp-icon"
+                              aria-hidden="true"
+                            ></i>
+                            <h3>Custom Content Management Solutions</h3>
+                            <div className="underline1"></div>
+                            <div className="underline2"></div>
+                            <p>
+                              Developing custom CMS solutions and plugins for
+                              seamless content updates and maintenance without
+                              the need for deep technical knowledge.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            <div className="testimonial">
+  <div className="testimonial-content">
+    <div className="testimonial-grid">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="main-title text-center wow fadeIn">
+              <h3>Testimonials</h3>
+              <div className="underline1"></div>
+              <div className="underline2"></div>
+              <p>People I've worked with have said some nice things</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="testimonial-details">
+        <section id="carousel">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-8 col-md-offset-2">
+                <div className="quote">
+                  <i className="fa fa-quote-left fa-4x"></i>
+                </div>
+                <div
+                  className="carousel slide"
+                  id="fade-quote-carousel"
+                  data-ride="carousel"
+                  data-interval="3000"
+                >
+                  <ol className="carousel-indicators">
+                    {recommendationCard.map((card, index) => (
+                      <li
+                        key={card.id}
+                        data-target="#fade-quote-carousel"
+                        data-slide-to={index}
+                        className={index === 0 ? 'active' : ''}
+                      ></li>
+                    ))}
+                  </ol>
+                  <div className="carousel-inner">
+                    {recommendationCard.map((card, index) => (
+                      <div
+                        className={`item ${index === 0 ? 'active' : ''}`}
+                        key={card.id}
+                      >
+                        <blockquote>
+                          <div className="testimonial-author">
+                            <img
+                              src={card.image}
+                              alt={card.name}
+                              className="author-img"
+                            />
+                            <span>{card.name}</span>
+                            <p>{card.designation}</p>
+                          </div>
+                          <p>{card.view}</p>
+                          <a href={card.linkednURL} target="_blank" rel="noopener noreferrer">
+                            View LinkedIn
+                          </a>
+                        </blockquote>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
           </div>
         </div>
 
@@ -948,7 +1166,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="blog-details wow fadeIn text-left">
+              {/* <div className="blog-details wow fadeIn text-left">
                 <div className="container">
                   <div className="row">
                     <div className="col-md-4 col-sm-6">
@@ -1065,7 +1283,7 @@ const Home = () => {
                             href="https://vilalali.github.io/vilal-ali/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            style={{ textDecoration: "none" }}
+                            My Blog  style={{ textDecoration: "none" }}
                           >
                             <h3>
                               <strong>Form Example in Laravel 8</strong>
@@ -1112,7 +1330,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -1312,7 +1530,7 @@ const Home = () => {
                       <div class="map-wrap">
                         <iframe
                           title="google-maps"
-                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7618.898940037569!2d78.38523512820622!3d17.444819901940025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93ef279b0435%3A0x4fc41dfdb274c933!2sInternational%20Institute%20of%20Information%20Technology%20Hyderabad%20(IIIT-H)!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7618.898940037569!2d78.38523512820622!3d17.444819901940025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93ef279b0435%3A0x4fc41dfdb274c933!2sInternational%20Institute%20of%20Information%20Technology%20Hyderabad%20(IIIT-H)!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                           width="100%"
                           height="450"
                           style={{ border: "0" }}

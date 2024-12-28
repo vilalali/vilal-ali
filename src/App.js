@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+//import './tailwind.css';
 
 // import Router
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";

@@ -57,6 +57,9 @@ function Header() {
                         <a href="/vilal-ali/#skill" onClick={handleNavClick}>Skill</a>
                       </li>
                       <li>
+                        <a href="/vilal-ali/#work" onClick={handleNavClick}>Work Experience</a>
+                      </li>
+                      <li>
                         <a href="/vilal-ali/#resume" onClick={handleNavClick}>Education</a>
                       </li>
                       <li>
