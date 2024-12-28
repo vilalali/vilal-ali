@@ -18,7 +18,7 @@ import FormExample from "./Pages/FormExample";
 function App() {
   return (
     <React.StrictMode>
-      <Router>
+      <Router basename="/vilal-ali">
         <Header />
         <ScrollToTop>
           <Switch>

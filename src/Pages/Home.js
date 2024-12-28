@@ -18,8 +18,8 @@ const Home = () => {
                           style={{ width: "266px", overflow: "hidden" }}
                         >
                           <b className="is-hidden">Vilal Ali</b>
-                          <b className="is-hidden">Designer</b>
-                          <b className="is-visible">Developer</b>
+                          <b className="is-hidden">Full Stack Developer</b>
+                          <b className="is-visible">System Architecture</b>
                         </span>
                       </h1>
                       <div className="about-social-icon text-center">

@@ -1,6 +1,16 @@
 import React from "react";
 
 function Header() {
+  const handleNavClick = (event) => {
+    event.preventDefault();
+    const targetId = event.currentTarget.getAttribute("href").split("#")[1];
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+      window.history.pushState(null, null, `#${targetId}`);
+    }
+  };
+
   return (
     <React.StrictMode>
       <div className="menubar">
@@ -10,7 +20,7 @@ function Header() {
               <div className="row">
                 <div className="col-md-3 col-sm-3">
                   <div className="site-title">
-                    <a href="/#home" style={{ textDecoration: "none" }}>
+                    <a href="/vilal-ali/#home" style={{ textDecoration: "none" }} onClick={handleNavClick}>
                       <h3>Vilal Ali</h3>
                     </a>
                   </div>
@@ -36,27 +46,27 @@ function Header() {
                   >
                     <ul className="nav navbar-nav">
                       <li>
-                        <a href="/#home" className="active">
+                        <a href="/vilal-ali/#home" className="active" onClick={handleNavClick}>
                           Home
                         </a>
                       </li>
                       <li>
-                        <a href="/#about">About</a>
+                        <a href="/vilal-ali/#about" onClick={handleNavClick}>About</a>
                       </li>
                       <li>
-                        <a href="/#skill">Skill</a>
+                        <a href="/vilal-ali/#skill" onClick={handleNavClick}>Skill</a>
                       </li>
                       <li>
-                        <a href="/#resume">Education</a>
+                        <a href="/vilal-ali/#resume" onClick={handleNavClick}>Education</a>
                       </li>
                       <li>
-                        <a href="/#service">Service</a>
+                        <a href="/vilal-ali/#service" onClick={handleNavClick}>Service</a>
                       </li>
                       <li>
-                        <a href="/#blog">Blog</a>
+                        <a href="/vilal-ali/#blog" onClick={handleNavClick}>Blog</a>
                       </li>
                       <li>
-                        <a href="/#contact">Contact</a>
+                        <a href="/vilal-ali/#contact" onClick={handleNavClick}>Contact</a>
                       </li>
                     </ul>
                   </div>
