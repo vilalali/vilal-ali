@@ -857,6 +857,18 @@ section:nth-of-type(2) {
 .resume-main {
   padding: 30px 10px;
 }
+
+/* Hover effect for the briefcase icon */
+.resume-main .stat-icon {
+  color: #efd236; /* default color */
+  transition: color 0.3s ease; /* smooth transition */
+}
+
+.resume-main .stat-icon:hover {
+  color: white; /* color when hovering */
+}
+
+
 .resume-details h3 {
   margin: 16px 0px;
   font-size: 23px;

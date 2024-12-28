@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/vilal-ali/static/css/main.f855e6bc.css",
-    "main.js": "/vilal-ali/static/js/main.409d69fc.js",
+    "main.css": "/vilal-ali/static/css/main.ec67611c.css",
+    "main.js": "/vilal-ali/static/js/main.a29f3ba5.js",
     "index.html": "/vilal-ali/index.html",
-    "main.f855e6bc.css.map": "/vilal-ali/static/css/main.f855e6bc.css.map",
-    "main.409d69fc.js.map": "/vilal-ali/static/js/main.409d69fc.js.map"
+    "main.ec67611c.css.map": "/vilal-ali/static/css/main.ec67611c.css.map",
+    "main.a29f3ba5.js.map": "/vilal-ali/static/js/main.a29f3ba5.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.409d69fc.js"
+    "static/css/main.ec67611c.css",
+    "static/js/main.a29f3ba5.js"
   ]
 }
