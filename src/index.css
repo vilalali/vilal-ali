@@ -1,0 +1,102 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --font-heading: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+
+  --color-primary-50: #fefce8;
+  --color-primary-100: #fef9c3;
+  --color-primary-200: #fef08a;
+  --color-primary-300: #fde047;
+  --color-primary-400: #facc15;
+  --color-primary-500: #efd236; /* Brand accent */
+  --color-primary-600: #ca8a04;
+  --color-primary-700: #a16207;
+}
+
+@layer utilities {
+  .text-text { color: var(--text); }
+  .text-text-muted { color: var(--text-muted); }
+  .bg-bg { background-color: var(--bg); }
+  .bg-card { background-color: var(--card); }
+  .border-border { border-color: var(--border); }
+}
+
+@layer base {
+  :root {
+    --bg: #ffffff;
+    --text: #05050a;
+    --text-muted: #4b5563;
+    --border: #e5e7eb;
+    --card: #f9fafb;
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(0, 0, 0, 0.05);
+  }
+
+  .dark {
+    --bg: #030305;
+    --text: #ffffff;
+    --text-muted: #9ca3af;
+    --border: rgba(255, 255, 255, 0.1);
+    --card: rgba(255, 255, 255, 0.03);
+    --glass-bg: rgba(10, 10, 15, 0.5);
+    --glass-border: rgba(255, 255, 255, 0.08);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer components {
+  .glass {
+    @apply backdrop-blur-xl shadow-lg;
+    background-color: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+  }
+  
+  .glass-card {
+    @apply backdrop-blur-xl rounded-2xl transition-all duration-300 shadow-xl;
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .dark .glass-card {
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4), inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+  }
+  
+  .glass-card:hover {
+    @apply -translate-y-1;
+    border-color: theme('colors.primary.500');
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(239, 210, 54, 0.1);
+  }
+  
+  .dark .glass-card:hover {
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5), 0 0 20px 0 rgba(239, 210, 54, 0.15), inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full font-medium transition-all duration-300 whitespace-nowrap;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-500 text-black hover:bg-primary-400 hover:-translate-y-0.5 shadow-[0_0_15px_rgba(239,210,54,0.3)] hover:shadow-[0_0_25px_rgba(239,210,54,0.5)];
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary-500 text-primary-500 hover:bg-primary-500/10 hover:-translate-y-0.5;
+  }
+}
