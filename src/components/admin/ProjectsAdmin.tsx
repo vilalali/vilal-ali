@@ -72,7 +72,7 @@ const ProjectsAdmin = () => {
             <button onClick={() => setEditingId(null)} className="flex items-center gap-2 px-4 py-2 rounded-lg border border-[var(--border)] hover:bg-[var(--background-alt)]">
               <X size={18} /> Cancel
             </button>
-            <button onClick={handleSave} className="flex items-center gap-2 bg-[var(--primary)] text-black px-4 py-2 rounded-lg hover:opacity-90">
+            <button onClick={handleSave} className="flex items-center gap-2 btn btn-primary text-sm px-4 py-2">
               <Save size={18} /> Save
             </button>
           </div>
@@ -129,7 +129,7 @@ const ProjectsAdmin = () => {
     <div className="space-y-6">
       <div className="flex justify-between items-center">
         <h3 className="text-xl font-medium">Projects Management</h3>
-        <button onClick={handleAddNew} className="flex items-center gap-2 bg-[var(--primary)] text-black px-4 py-2 rounded-lg hover:opacity-90">
+        <button onClick={handleAddNew} className="flex items-center gap-2 btn btn-primary text-sm px-4 py-2">
           <Plus size={18} /> Add Project
         </button>
       </div>

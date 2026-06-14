@@ -48,7 +48,7 @@ const CVUploadAdmin = () => {
 
       <div className="border-2 border-dashed border-[var(--border)] rounded-xl p-10 text-center hover:bg-[var(--background-alt)] transition-colors">
         <p className="mb-4 text-gray-400">Select a PDF file to update your CV.</p>
-        <label className="bg-[var(--primary)] text-black px-6 py-2 rounded-lg cursor-pointer hover:opacity-90 inline-block">
+        <label className="btn btn-primary px-6 py-2 inline-block">
           {isUploading ? 'Uploading...' : 'Choose PDF File'}
           <input type="file" accept=".pdf" className="hidden" onChange={handleFileChange} disabled={isUploading} />
         </label>

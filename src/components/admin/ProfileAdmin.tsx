@@ -67,7 +67,7 @@ const ProfileAdmin = () => {
         <button 
           onClick={handleSave} 
           disabled={saving}
-          className="flex items-center gap-2 bg-[var(--primary)] text-black px-4 py-2 rounded-lg hover:opacity-90 disabled:opacity-50"
+          className="flex items-center gap-2 btn btn-primary text-sm px-4 py-2 disabled:opacity-50"
         >
           <Save size={18} /> {saving ? 'Saving...' : 'Save Profile'}
         </button>

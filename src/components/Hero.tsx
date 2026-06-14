@@ -1,5 +1,5 @@
 import { ArrowRight, Mail } from 'lucide-react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import api from '../services/api';
@@ -85,6 +85,9 @@ export default function Hero() {
                 </a>
                 <a href={profile?.socialLinks?.linkedin || "https://linkedin.com/in/vilal-ali/"} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full glass hover:-translate-y-1 transition-all text-text hover:text-primary-500">
                   <FaLinkedin size={20} />
+                </a>
+                <a href={profile?.socialLinks?.twitter || "https://x.com/b_belaal"} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full glass hover:-translate-y-1 transition-all text-text hover:text-primary-500">
+                  <FaXTwitter size={20} />
                 </a>
                 <a href={`mailto:${profile?.email || 'vilal.ali@research.iiit.ac.in'}`} className="p-2 rounded-full glass hover:-translate-y-1 transition-all text-text hover:text-primary-500">
                   <Mail size={20} />
