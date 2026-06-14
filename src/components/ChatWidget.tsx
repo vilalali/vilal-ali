@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageCircle, X, Send, ThumbsUp, ThumbsDown, CheckCircle } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
 import api from '../services/api';
 
 interface Message {
@@ -125,7 +126,29 @@ const ChatWidget = () => {
                         : 'bg-[var(--background)] border border-[var(--border)] text-text self-start rounded-bl-sm'
                     }`}
                   >
-                    {msg.parts[0].text}
+                    <ReactMarkdown
+                      components={{
+                        a: ({node, href, children, ...props}) => {
+                          let finalHref = href;
+                          if (href === '/api/cv/download') {
+                             finalHref = api.defaults.baseURL ? `${api.defaults.baseURL}/cv/download` : 'http://localhost:3001/api/cv/download';
+                          }
+                          return (
+                            <a 
+                              href={finalHref} 
+                              {...props} 
+                              className="inline-block mt-2 mb-1 mr-2 px-4 py-2 bg-primary-500 text-black rounded-lg font-medium hover:opacity-90 transition-opacity shadow-sm text-sm" 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                            >
+                              {children}
+                            </a>
+                          );
+                        }
+                      }}
+                    >
+                      {msg.parts[0].text}
+                    </ReactMarkdown>
                   </div>
                 ))}
                 {isLoading && (
