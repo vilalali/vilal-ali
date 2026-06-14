@@ -2,6 +2,25 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Quote, User } from 'lucide-react';
 
+const ImageWithFallback = ({ src, alt }: { src?: string; alt: string }) => {
+  const [error, setError] = useState(false);
+  
+  return (
+    <div className="w-16 h-16 rounded-full bg-primary-500/20 mb-4 overflow-hidden border-2 border-primary-500 flex items-center justify-center text-primary-500/50">
+      {!error && src ? (
+        <img
+          src={src}
+          alt={alt}
+          className="w-full h-full object-cover"
+          onError={() => setError(true)}
+        />
+      ) : (
+        <User size={32} />
+      )}
+    </div>
+  );
+};
+
 export default function Testimonials() {
   const testimonials = [
     {
@@ -76,9 +95,11 @@ export default function Testimonials() {
                   "{testimonials[currentIndex].content}"
                 </p>
                 <div className="flex flex-col items-center">
-                  <div className="w-16 h-16 rounded-full bg-primary-500/20 mb-4 overflow-hidden border-2 border-primary-500 flex items-center justify-center text-primary-500/50">
-                    <User size={32} />
-                  </div>
+                  <ImageWithFallback 
+                    key={currentIndex}
+                    src={testimonials[currentIndex].image}
+                    alt={testimonials[currentIndex].name}
+                  />
                   <h4 className="text-xl font-bold font-heading text-primary-500">
                     {testimonials[currentIndex].name}
                   </h4>
