@@ -87,15 +87,11 @@ vilal-frontend/
 - **Continuous Deployment (GitHub Pages):**
   This project uses GitHub Actions for automated deployment.
   1. Every `git push` to the `main` branch triggers the `.github/workflows/deploy.yml` pipeline.
-  2. The pipeline builds the React app using `npm run build`.
-  3. It copies `index.html` to `404.html` (to prevent React Router 404 errors on GitHub Pages).
-  4. The code is instantly published to `https://vilalali.github.io/vilal-ali/`.
+  2. The code is instantly published to `https://vilalali.github.io/vilal-ali/`.
 
 ## 🔒 Security Notice
 > [!IMPORTANT]  
 > This repository is **100% public**. **DO NOT** commit any sensitive information, passwords, or API keys here. All API keys and database credentials exist securely within the backend server environment.
-
-The frontend communicates with the backend exclusively via REST APIs and uses JSON Web Tokens (JWT) for authentication stored locally in the browser. No hardcoded secrets exist in this source code.
 
 ## 👨‍💻 Author Details
 - **Name:** Vilal Ali
