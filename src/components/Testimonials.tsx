@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Quote, User } from 'lucide-react';
 
 export default function Testimonials() {
   const testimonials = [
@@ -11,16 +11,16 @@ export default function Testimonials() {
       image: "assets/img/team/prof-krishna.png" // Placeholder path
     },
     {
-      name: "Chirag Agrawal",
-      designation: "Product Lead | IHub Data",
-      content: "Vilal is an outstanding Full Stack Developer. His contribution to our key projects was invaluable. He not only writes clean code but also deeply understands product requirements and user experience.",
-      image: "assets/img/team/chirag.png" // Placeholder path
+      name: "Mohd Hozaifa Khan (PhD)",
+      designation: "https://github.com/Khanitachi",
+      content: "Vilal's technical expertise and problem-solving abilities are remarkable. He consistently delivers high-quality work and is a great asset to any team.",
+      image: "assets/img/team/hozaifa.png" // Placeholder path
     },
     {
-      name: "Dr. Ankit Gangwal",
-      designation: "Assistant Professor | IIIT-H",
-      content: "Vilal's dedication to his work and his quick learning ability make him a strong asset to any team. His work on the data visualization dashboards significantly improved our project outcomes.",
-      image: "assets/img/team/ankit.png" // Placeholder path
+      name: "Rashid Ahmaed",
+      designation: "CEO | eBhashasetu Pvt. Ltd.",
+      content: "Working with Vilal has been an absolute pleasure. His dedication, technical prowess, and innovative mindset have significantly contributed to our success.",
+      image: "assets/img/team/rashid.png" // Placeholder path
     }
   ];
 
@@ -41,7 +41,7 @@ export default function Testimonials() {
 
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="text-center mb-16">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -49,7 +49,7 @@ export default function Testimonials() {
           >
             What <span className="text-primary-500">People Say</span>
           </motion.h2>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, width: 0 }}
             whileInView={{ opacity: 1, width: "60px" }}
             viewport={{ once: true }}
@@ -76,11 +76,8 @@ export default function Testimonials() {
                   "{testimonials[currentIndex].content}"
                 </p>
                 <div className="flex flex-col items-center">
-                  <div className="w-16 h-16 rounded-full bg-primary-500/20 mb-4 overflow-hidden border-2 border-primary-500">
-                    {/* Image placeholder */}
-                    <div className="w-full h-full bg-gray-300 dark:bg-gray-700 flex items-center justify-center text-xs">
-                      IMG
-                    </div>
+                  <div className="w-16 h-16 rounded-full bg-primary-500/20 mb-4 overflow-hidden border-2 border-primary-500 flex items-center justify-center text-primary-500/50">
+                    <User size={32} />
                   </div>
                   <h4 className="text-xl font-bold font-heading text-primary-500">
                     {testimonials[currentIndex].name}
@@ -94,7 +91,7 @@ export default function Testimonials() {
           </div>
 
           <div className="flex justify-center gap-4 mt-8 relative z-20">
-            <button 
+            <button
               onClick={prev}
               className="p-3 rounded-full glass hover:bg-primary-500 hover:text-black transition-colors"
               aria-label="Previous testimonial"
@@ -106,14 +103,13 @@ export default function Testimonials() {
                 <button
                   key={idx}
                   onClick={() => setCurrentIndex(idx)}
-                  className={`w-3 h-3 rounded-full transition-all ${
-                    idx === currentIndex ? 'bg-primary-500 w-8' : 'bg-border'
-                  }`}
+                  className={`w-3 h-3 rounded-full transition-all ${idx === currentIndex ? 'bg-primary-500 w-8' : 'bg-border'
+                    }`}
                   aria-label={`Go to testimonial ${idx + 1}`}
                 />
               ))}
             </div>
-            <button 
+            <button
               onClick={next}
               className="p-3 rounded-full glass hover:bg-primary-500 hover:text-black transition-colors"
               aria-label="Next testimonial"
