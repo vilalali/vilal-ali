@@ -57,7 +57,7 @@ function App() {
     <ThemeProvider>
       <AuthProvider>
         <ParticleBackground />
-        <Router>
+        <Router basename={import.meta.env.BASE_URL}>
           <Routes>
             <Route path="/" element={<Portfolio />} />
             <Route path="/about" element={<AboutPage />} />
