@@ -39,7 +39,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     sessionStorage.removeItem('username');
     setIsAuthenticated(false);
     setUsername(null);
-    window.location.href = '/';
+    window.location.href = import.meta.env.BASE_URL;
   };
 
   return (
