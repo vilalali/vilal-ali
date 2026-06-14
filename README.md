@@ -10,13 +10,50 @@
 ## 📖 About the Project
 This is the frontend component of Vilal Ali's personal portfolio and Content Management System (CMS). Built with modern web technologies, it features a highly interactive user interface, an AI-powered chat widget, and an administrative dashboard to manage portfolio content dynamically.
 
-**Live Website:** [https://vilalali.github.io/vilal-ali/](https://vilalali.github.io/vilal-ali/)
+## 🏗️ Architecture
+The frontend architecture follows a component-based approach utilizing React and Vite for lightning-fast builds. It uses React Router for client-side routing, Tailwind CSS for utility-first styling, and Context API for global state management (such as Theme and Authentication).
 
-## 🔒 Security Notice
-> [!IMPORTANT]  
-> This repository is **100% public**. **DO NOT** commit any sensitive information, passwords, or API keys here. All API keys and database credentials exist securely within the backend server environment.
+```mermaid
+graph TD
+    A[App Component] --> B[Routing / Pages]
+    B --> C[Public Portfolio]
+    B --> D[Admin Dashboard]
+    C --> E[UI Components: Hero, About, Projects...]
+    D --> F[Admin Components: CMS Forms, Image Uploads]
+    G[Context API] --> C
+    G --> D
+    H[Axios Service] --> Backend[Backend API]
+    C --> H
+    D --> H
+```
 
-The frontend communicates with the backend exclusively via REST APIs and uses JSON Web Tokens (JWT) for authentication stored locally in the browser. No hardcoded secrets exist in this source code.
+## 🧩 Project Components & Functionalities
+- **Portfolio Views:** Sections for Hero, About, Projects, Experience, Education, Skills, Services, Testimonials, and Publications.
+- **Admin Dashboard:** A secured area to perform CRUD operations on portfolio content (e.g., uploading new projects, updating CV, editing blogs).
+- **AI Chat Widget:** A floating interactive assistant integrated with the backend's Gemini API route to answer questions about the portfolio.
+- **Markdown Rendering:** Utilizes `@uiw/react-md-editor` and `react-markdown` for rich text editing and viewing in blogs and projects.
+- **Dark/Light Mode:** Integrated theme switching using Context and Tailwind's dark mode strategies.
+
+## 📂 Directory Structure
+```text
+vilal-frontend/
+├── public/              # Static assets (images, CV, icons)
+├── src/
+│   ├── components/      # Reusable UI components & Admin specific components
+│   ├── context/         # Context providers (ThemeContext, AuthContext)
+│   ├── hooks/           # Custom React hooks
+│   ├── lib/             # Utility libraries and helper functions
+│   ├── pages/           # Page components representing routes
+│   ├── services/        # API communication layer (Axios instances)
+│   ├── styles/          # Global styles (Tailwind imports)
+│   ├── App.tsx          # Main application component & Router wrapper
+│   ├── main.tsx         # Application entry point
+│   └── index.css        # Entry stylesheet
+├── vite.config.ts       # Vite bundler configuration
+├── tailwind.config.js   # Tailwind configuration
+├── tsconfig.json        # TypeScript configuration
+└── package.json         # Project metadata and dependencies
+```
 
 ## ⚙️ Project Setup Steps
 1. **Clone the repository:**
@@ -53,6 +90,12 @@ The frontend communicates with the backend exclusively via REST APIs and uses JS
   2. The pipeline builds the React app using `npm run build`.
   3. It copies `index.html` to `404.html` (to prevent React Router 404 errors on GitHub Pages).
   4. The code is instantly published to `https://vilalali.github.io/vilal-ali/`.
+
+## 🔒 Security Notice
+> [!IMPORTANT]  
+> This repository is **100% public**. **DO NOT** commit any sensitive information, passwords, or API keys here. All API keys and database credentials exist securely within the backend server environment.
+
+The frontend communicates with the backend exclusively via REST APIs and uses JSON Web Tokens (JWT) for authentication stored locally in the browser. No hardcoded secrets exist in this source code.
 
 ## 👨‍💻 Author Details
 - **Name:** Vilal Ali
